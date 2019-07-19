@@ -1,15 +1,20 @@
-import React from 'react';
+import React,{Component} from "react";
 import Windows from "../Windows/Windows.js";
-import Time from "../Time/Time.js";
-
-function App() {
+import Todo from "../Todo/Todo.js";
+import Todolist from "../Todo/Todolist.js";
+class App extends Component{
   
-  return (
+  render(){
+    return( 
     <div className="App">
-        <Windows/>
-        <Time/>
-    </div>
-  );
+      <Windows/>
+      
+      <Todolist/>
+      <Todo/>
+    
+    </div>);
+  }
 }
+
 
 export default App;

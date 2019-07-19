@@ -1,5 +1,4 @@
 import React from 'react'
-
 class Time extends React.Component {
   constructor(props) {
     super(props);
@@ -17,7 +16,6 @@ class Time extends React.Component {
     });
   }
 
-  
   startTimer(event) {
     let endDate = new Date();
     endDate.setSeconds(endDate.getSeconds() + this.state.secondsToCount);
@@ -29,7 +27,7 @@ class Time extends React.Component {
   }
 
   startTick(event) {
-    this.Reset()  // clear any existing timer
+    this.stopTick()  // clear any existing timer
     this.timerID = setInterval(
       () => this.tick(),
       1000
@@ -51,15 +49,7 @@ class Time extends React.Component {
     });
   }
 
-  Stop() {
-    if(this.timer) {
-      clearInterval(this.timer);
-      this.setState(
-        {running:false}
-      );
-    }
-  }
-  Reset(event) {
+  stopTick(event) {
     clearInterval(this.timerID);
   }
 
@@ -74,24 +64,23 @@ class Time extends React.Component {
   render() {
     return (
       <div>
-    
-      <div>
+        
+        <div>
         { this.state.secondsUntilEnd > 0 ? (
           <span>Seconds left: { this.state.secondsUntilEnd }</span>
         ) : (
           <span>Timer stopped.</span>
         ) }
         </div>
-            <div>
+       <div>
           Seconds: <input value={this.state.secondsToCount} onChange={this.handleChangeSeconds} />
           <input type="button" value="Start" onClick={this.startTimer} />
-          <input type="button" value="Stop" onClick={this.Stop} />
-          <input type="button" value="reset" onClick={this.Reset} />
+          <input type="button" value="Stop" onClick={this.startTimer} />
+          <input type="button" value="Reset" onClick={this.stopTick} />
         </div>
-        
+
       </div>
     )
   }
 }
-
 export default Time;
