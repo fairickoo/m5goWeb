@@ -5,6 +5,8 @@ import Todolist from "../Todo/Todolist.js";
 import Todoheader from "../Todo/Todoheader.js";
 import  "../App/App.css";
 import Graph1 from "../Graph/Graph1";
+import Day from "../Day/Day.js";
+import Day2 from "../Day/Day2.js";
 class App extends Component{
   constructor(props){
     super(props);
@@ -24,6 +26,9 @@ class App extends Component{
     <div className="App">
       <Windows/>
       <Graph1/>
+      <Day2/>
+      <Day/>
+ 
       <Todoheader/> 
       <Todo onAddTodo={this.addTodo}/>
       <Todolist items={todoitem}  />

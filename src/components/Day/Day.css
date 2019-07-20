@@ -1,0 +1,12 @@
+.day{
+    position: relative;
+    bottom: 1070px;
+    left: 1100px;
+}
+.day2{
+    position: absolute;
+    bottom: 1045px;
+    left: 1500px;
+    font-size: 50px;
+    color:white;
+}
