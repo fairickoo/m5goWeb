@@ -1,6 +1,6 @@
 .todolist ul.list{
     position: relative;
-    bottom: 1220px;
+    bottom: 1640px;
     left: 100px;
     width:400px;
     font-size: 40px;
@@ -27,7 +27,7 @@ h1{
 }
 .todo{
     position:relative;
-    bottom:1220px;
+    bottom:1620px;
     left: 100px;
 }
 input.add{
