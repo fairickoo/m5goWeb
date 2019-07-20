@@ -1,0 +1,86 @@
+.todolist ul.list{
+    position: relative;
+    bottom: 730px;
+    left: 100px;
+    width:400px;
+    font-size: 40px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 10px;
+    background-color: rgb(238, 235, 235);
+    
+}
+
+h1{
+    position:absolute;
+    bottom: 650px;
+    left: 100px;
+    padding:  7px 70px 0 70px;
+    background:#999;
+    width:300px;
+    height: 80px;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 25px; 
+
+}
+.todo{
+    position:relative;
+    bottom:710px;
+    left: 100px;
+}
+input.add{
+    width:340px;
+    height: 50px;
+    border-radius: 20px ; 
+    border: solid 1px#999;
+    font-size:20px; 
+    padding: 10px;
+}
+  div.showitem{
+    font-size:25px;
+}
+
+input.Box{
+    
+    width: 20px;
+    height: 20px;
+    margin: 20px 10px 20px -30px;
+    background: #999;
+}
+button.buttonadd{
+    position: relative;
+    left: 10px;
+    width: 70px;
+    height: 70px;
+    border:  #999;
+    border-radius:50px; 
+    box-shadow: 1px 2px  1px #999;
+    background: #999;
+    color:white;
+    font-size: 20px;
+
+}
+
+button.buttonmove{
+    position:absolute;
+    margin: 10px;
+    left: 385px;
+    width: 35px;
+    height: 35px;
+    border:  #999;
+    border-radius:10px; 
+    box-shadow: 1px 2px 1px #999;
+    background: #07EBEB;
+    color:black;
+    font-size: 25px;
+
+}
+button.buttonadd:hover ,button.buttonmove:hover{
+    background: rgb(230, 221, 221);
+}
+
+input.add:hover{
+    border: solid 1px #07EBEB;
+}

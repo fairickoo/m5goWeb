@@ -2,14 +2,17 @@
 import React,{Component} from "react";
 import Todoitem from "../Todo/Todoitem";
 class Todolist extends Component{
+   
     render(){
         let {items} = this.props
         return(
             <div className="todolist">
-                <ul>
+                <ul className="list">
                     {
                         items.map((todo,i)=>
-                        <li key={i}><Todoitem  text={todo}/></li>)
+                        <div className="showitem" key={i}><Todoitem className="todoitem"  text={todo}/> 
+                       
+                        </div>)
                         
                     }
                 </ul> 

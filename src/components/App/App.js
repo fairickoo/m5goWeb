@@ -2,6 +2,8 @@ import React,{Component} from "react";
 import Windows from "../Windows/Windows.js";
 import Todo from "../Todo/Todo.js";
 import Todolist from "../Todo/Todolist.js";
+import Todoheader from "../Todo/Todoheader.js";
+import  "../App/App.css";
 class App extends Component{
   constructor(props){
     super(props);
@@ -13,14 +15,17 @@ class App extends Component{
   addTodo(newTodo){
     this.setState({todoitem:this.state.todoitem.concat([newTodo])})
   }
+
+  
   render(){
     let {todoitem} = this.state
     return( 
     <div className="App">
       <Windows/>
       
-      <Todolist items={todoitem}/>
+      <Todoheader/> 
       <Todo onAddTodo={this.addTodo}/>
+      <Todolist items={todoitem}  />
     
     </div>);
   }

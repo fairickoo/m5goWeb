@@ -1,5 +1,6 @@
 
 import React,{Component} from "react";
+import  "../Todo/Todostyle.css";
 class Todo extends Component{
     constructor(props){
         super(props)
@@ -19,9 +20,8 @@ class Todo extends Component{
        let {newTodo}=this.state
         return(
             <div className="todo">
-                <label className="labelTOdo">Add Todo</label>
-               <input value={newTodo} onChange={(e)=>this.setState({newTodo:e.target.value})} /> 
-               <button onClick={this.addClick}>Add</button>
+               <input maxlength="30" className="add" value={newTodo} onChange={(e)=>this.setState({newTodo:e.target.value})} placeholder="add a new todo..." /> 
+               <button className="buttonadd" onClick={this.addClick}>Add</button>
               
             </div>
            

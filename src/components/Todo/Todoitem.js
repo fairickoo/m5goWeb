@@ -1,6 +1,6 @@
 
 import React,{Component} from "react"
-
+import  "../Todo/Todostyle.css";
 class Todoitem extends Component{
     constructor(props){
         super(props)
@@ -13,17 +13,20 @@ class Todoitem extends Component{
         this.setState({
             done: !this.state.done
         })
-       
     }
+    
     render(){
         let {text}= this.props
         
         return(
             <div className="todoitem">
-                <input type ="checkbox" 
+                <input  type ="checkbox" 
+                className ="Box"
                 value={this.state.done}
                 onClick={this.toggle}/>
-               {this.state.done ? "DONE:"+text:text}
+                   
+            {this.state.done ? <s>{text}</s>:text}
+            <button className="buttonmove"  >-</button>
             </div>
            
         );
