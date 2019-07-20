@@ -16,11 +16,11 @@ class Todo extends Component{
         })
     }
     render(){
-       
+       let {newTodo}=this.state
         return(
             <div className="todo">
                 <label className="labelTOdo">Add Todo</label>
-               <input onChange={(e)=>this.setState({newTodo:e.target.value})} /> 
+               <input value={newTodo} onChange={(e)=>this.setState({newTodo:e.target.value})} /> 
                <button onClick={this.addClick}>Add</button>
               
             </div>
