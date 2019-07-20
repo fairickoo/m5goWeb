@@ -1,0 +1,46 @@
+.displayedTime{
+    position: absolute;
+    bottom: 120px;
+    left: 1135px;
+    font-size: 150px;
+    color: white;
+}
+input.addtime{
+    position: absolute;
+    bottom: 45px;
+    left: 930px;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    border:solid 1px #999999;
+    font-size: 20px;
+    padding: 10px;
+}
+button.StopReset{
+    position: relative;;
+    bottom: 550px;
+    left: 1200px;
+    width: 100px;
+    height: 60px;
+    border-radius: 20px;
+    border: solid 1px #999999;
+    background: #999999;
+    margin: 10px;
+    font-size:20px;
+    color: white; 
+    box-shadow: 1px 2px 1px #000000;
+}
+input.start{
+    position: absolute;
+    bottom: 45px;
+    left: 1085px;
+    width: 100px;
+    height: 60px;
+    border-radius: 20px;
+    border: solid 1px #999999;
+    background: #e91010;
+    
+    font-size:20px;
+    color: white; 
+    box-shadow: 1px 2px 1px #000000;
+}
